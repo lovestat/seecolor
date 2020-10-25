@@ -1,6 +1,6 @@
 # seecolor
 
-## Overview
+## Overview 
 
 When you select a color literal, the color will output in the console.
 
