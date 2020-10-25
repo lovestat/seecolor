@@ -9,3 +9,4 @@ When you select a color literal, the color will output in the console.
 # install from GitHub:
 devtools::install_github("songshangchen6/seecolor")
 ```
+
