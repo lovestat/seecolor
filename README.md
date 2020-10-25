@@ -1,4 +1,4 @@
-# seecolor
+# seecolor <img src="man/figures/logo.png" align="right" width="120">
 
 ## Overview 
 
@@ -12,3 +12,12 @@ When you select a color literal, the color will be output in the console.
 devtools::install_github("songshangchen6/seecolor")
 ```
 
+## Usage
+
+```r
+# show the colors as ribbons
+seecolor::show_color()
+
+# show the colors as single continous ribbon
+seecolor::show_color(type = "oneribbon")
+```
