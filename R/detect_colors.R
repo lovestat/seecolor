@@ -18,7 +18,7 @@ detect_colors <- function() {
   detected.colors.hex.six <- stringr::str_extract_all(active.text,
                                                       "(#[[:alnum:]]{6})") %>% unlist()
   detected.colors.builtin.literal <- stringr::str_extract_all(active.text,
-                                                              colors() %>%
+                                                              grDevices::colors() %>%
                                                                 paste(collapse = '|') %>%
                                                                 paste0('"', ., '"') ) %>% unlist()
   detected.colors <- c(detected.colors, detected.colors.hex.six, detected.colors.builtin.literal)
