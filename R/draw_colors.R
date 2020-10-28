@@ -1,3 +1,5 @@
+
+
 draw_color <- function(bg.color, text.color = "ivory", blank.len = 20 - nchar(bg.color), next.line = TRUE){
   tc <- make_style(text.color)
   bgc <- make_style(bg.color, bg = T)
