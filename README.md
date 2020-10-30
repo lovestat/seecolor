@@ -26,5 +26,5 @@ seecolor::show_color()
 seecolor::show_color(type = "oneribbon")
 
 ggplot(diamonds, aes(carat, price)) + geom_bin2d()
-
+ 
 ```

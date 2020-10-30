@@ -26,7 +26,7 @@ detect_colors <- function() {
                error = function(error_condition) {
                  return(FALSE)
                })) {
-    detected.colors.ggplot <- unlist(map(gg <- ggplot_build(eval(parse(text = active.text)))[["data"]], extract_colors_gg))
+    detected.colors.ggplot <- unlist(map(ggplot_build(eval(parse(text = active.text)))[["data"]], extract_colors_gg))
     detected.colors <- c(detected.colors, detected.colors.ggplot)
     }
 

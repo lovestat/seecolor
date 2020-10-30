@@ -3,12 +3,12 @@
 
 show_color <- function(type = "ribbons") {
   previous.colors <- 0
-  if (type == "ribbons")   show_color_while(previous.colors)
+  if (type == "ribbons")   show_color_ribbons(previous.colors)
   if (type == "oneribbon") show_color_oneribbon(previous.colors)
 }
 
 
-show_color_while <- function(previous.colors) {
+show_color_ribbons <- function(previous.colors) {
   message("Press esc twice to stop")
 
   while (T) {
