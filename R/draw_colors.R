@@ -1,6 +1,6 @@
 
 
-draw_color <- function(bg.color, text.color = "ivory", blank.len = 20 - nchar(bg.color), next.line = TRUE){
+draw_color_ribbon <- function(bg.color, text.color = "ivory", blank.len = 20 - nchar(bg.color), next.line = TRUE){
   tc <- make_style(text.color)
   bgc <- make_style(bg.color, bg = T)
   dc <- combine_styles(tc, bgc)
@@ -10,12 +10,12 @@ draw_color <- function(bg.color, text.color = "ivory", blank.len = 20 - nchar(bg
   if (next.line) cat("\n")
 }
 
-draw_colors <- function(colors){
-  purrr::walk(colors, draw_color)
+draw_colors_ribbon <- function(colors){
+  purrr::walk(colors, draw_color_ribbon)
 }
 
 
-draw_color_oneribbon <- function(bg.color, text.color = "ivory", blank.len = 1, next.line = FALSE){
+draw_color_mosaic <- function(bg.color, text.color = "ivory", blank.len = 1, next.line = FALSE){
   tc <- make_style(text.color)
   bgc <- make_style(bg.color, bg = T)
   dc <- combine_styles(tc, bgc)
@@ -26,7 +26,7 @@ draw_color_oneribbon <- function(bg.color, text.color = "ivory", blank.len = 1, 
 }
 
 
-draw_colors_oneribbon <- function(colors){
-  purrr::walk(colors, draw_color_oneribbon)
+draw_colors_mosaic <- function(colors){
+  purrr::walk(colors, draw_color_mosaic)
 }
 
