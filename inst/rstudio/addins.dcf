@@ -1,0 +1,4 @@
+Name: Pick Color as Mosaic
+Description: Invoke pick_color(type = 'mosaic')
+Binding: pick_color
+Interactive: true
