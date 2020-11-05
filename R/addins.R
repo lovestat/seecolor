@@ -7,7 +7,7 @@
 ##' @export
 ##' @md
 
-pick_color_addin_mosaic <- function(){
+z_pick_color_addin_mosaic <- function(){
   seecolor::pick_color(type = 'mosaic')
 }
 
@@ -19,6 +19,6 @@ pick_color_addin_mosaic <- function(){
 ##' @export
 ##'
 ##' @md
-pick_color_addin_ribbon <- function(){
+z_pick_color_addin_ribbon <- function(){
   seecolor::pick_color(type = "ribbon")
 }

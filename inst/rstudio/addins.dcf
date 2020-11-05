@@ -1,9 +1,11 @@
 Name: Pick Color as Mosaic
 Description: Invoke pick_color(type = 'mosaic')
-Binding: pick_color_addin_mosaic
-Interactive: false
+Binding: z_pick_color_addin_mosaic
+Interactive: true
 
 Name: Pick Color as Ribbons
 Description: Invoke pick_color(type = "ribbon")
-Binding: pick_color_addin_ribbon
+Binding: z_pick_color_addin_ribbon
 Interactive: true
+
+
