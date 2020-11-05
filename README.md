@@ -16,7 +16,7 @@ When you select color literals, a palette, or a ggplot2 object, the colors used 
 ## Installation
 ```r
 # install from GitHub:
-devtools::install_github("songshangchen6/seecolor")
+devtools::install_github("lovestat/seecolor")
 ```
 
 ## Usage

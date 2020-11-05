@@ -16,8 +16,8 @@ Imports:
     magrittr,
     ggplot2
 License: MIT + file LICENSE
-URL: https://github.com/songshangchen6/seecolor
-BugReports: https://github.com/songshangchen6/seecolor/issues
+URL: https://github.com/lovestat/seecolor
+BugReports: https://github.com/lovestat/seecolor/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
