@@ -11,8 +11,9 @@
 
 When you select a color literal and a ggplot2 object, the colors used there will be output in the console.
 
-
+![Show the palette colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/2.gif)
 ![Show the colors as ribbons!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/3.gif)
+
 
 ## Installation
 ```r
@@ -22,13 +23,13 @@ devtools::install_github("songshangchen6/seecolor")
 
 ## Usage
 
-![Show the literal colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/1.gif)
+
 ```r
 # Highlight objects by cursor to show the contained colors
 seecolor::pick_color()
 ```
 
-![Show the palette colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/2.gif)
+
 
 ```r
 # Change output styles, "ribbon" or "mosaic"
