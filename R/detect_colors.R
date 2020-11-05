@@ -10,6 +10,7 @@ detect_colors <- function(active.text) {
   detected.colors.palette <- NULL
   if (tryCatch(
     {
+      eval.text <- NULL
       eval(parse(text = paste0("eval.text <- ", active.text)))
       is.character(eval.text)
     },
@@ -27,7 +28,7 @@ detect_colors <- function(active.text) {
                error = function(error_condition) {
                  return(FALSE)
                })) {
-    detected.colors.ggplot <- unlist(purrr::map(ggplot_build(eval(parse(text = active.text)))[["data"]], extract_colors_gg))
+    detected.colors.ggplot <- unlist(purrr::map(ggplot2::ggplot_build(eval(parse(text = active.text)))[["data"]], extract_colors_gg))
   }
 
   #----- Capture the literal colors

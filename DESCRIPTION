@@ -1,20 +1,21 @@
 Package: seecolor
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Make Objects Containing Colors Seeable in Console
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Shangchen",
+           family = "Song",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "s.song@ufl.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Output colors used in literal vectors, palettes and plot objects (ggplot).
 Imports: 
     dplyr,
     crayon,
     purrr,
     stringr,
     rstudioapi,
-    magrittr
+    magrittr,
+    ggplot2
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
