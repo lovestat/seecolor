@@ -2,9 +2,9 @@
 
 export(open_sample)
 export(pick_color)
-export(pick_color_addin_mosaic)
-export(pick_color_addin_ribbon)
 export(print_color)
+export(z_pick_color_addin_mosaic)
+export(z_pick_color_addin_ribbon)
 importFrom(crayon,combine_styles)
 importFrom(crayon,make_style)
 importFrom(magrittr,`%>%`)
