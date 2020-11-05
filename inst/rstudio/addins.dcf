@@ -6,4 +6,4 @@ Interactive: false
 Name: Pick Color as Ribbons
 Description: Invoke pick_color(type = "ribbon")
 Binding: pick_color_addin_ribbon
-Interactive: false
+Interactive: true

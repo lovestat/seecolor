@@ -2,6 +2,8 @@
 
 export(open_sample)
 export(pick_color)
+export(pick_color_addin_mosaic)
+export(pick_color_addin_ribbon)
 export(print_color)
 importFrom(crayon,combine_styles)
 importFrom(crayon,make_style)
