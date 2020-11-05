@@ -1,12 +1,11 @@
 Package: seecolor
-Title: Make Objects Containing Colors Seeable in Console
+Title: View Colors Used in R Objects in the Console
 Version: 0.0.1
 Authors@R: 
     person(given = "Shangchen",
            family = "Song",
            role = c("aut", "cre"),
-           email = "s.song@ufl.edu",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "s.song@ufl.edu")
 Description: Output colors used in literal vectors, palettes and plot objects (ggplot).
 Imports: 
     dplyr,
@@ -17,6 +16,8 @@ Imports:
     magrittr,
     ggplot2
 License: MIT + file LICENSE
+URL: https://github.com/songshangchen6/seecolor
+BugReports: https://github.com/songshangchen6/seecolor/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

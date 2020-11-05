@@ -9,11 +9,9 @@
 
 ## Overview 
 
-When you select a color literal and a ggplot2 object, the colors used there will be output in the console.
+When you select color literals, a palette, or a ggplot2 object, the colors used there will be output in the console.
 
 ![Show the palette colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/2.gif)
-![Show the colors as ribbons!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/3.gif)
-
 
 ## Installation
 ```r
@@ -26,21 +24,17 @@ devtools::install_github("songshangchen6/seecolor")
 
 ```r
 # Highlight objects by cursor to show the contained colors
-seecolor::pick_color()
-```
+pick_color()
 
-
-
-```r
 # Change output styles, "ribbon" or "mosaic"
-seecolor::pick_color(type = "r")
+pick_color(type = "r")
 
 # Change the length of the color blocks
-seecolor::pick_color(blank.len = 1)
+pick_color(blank.len = 1)
 
 # Print colors contained in literal, palette and ggplot objects
-seecolor::print_color(colors(), type = "m", blank.len = 1)
+print_color(colors(), type = "m", blank.len = 1)
 
 # Open the pre-define test file
-seecolor::open_sample()
+open_sample()
 ```
