@@ -21,7 +21,7 @@ draw_colors_mosaic <- function(x, blank.len){
   x[["col.pal"]] %>%
     purrr::walk(draw_color_mosaic, blank.len = blank.len)
 
-  if (!purrr::is_empty(x[["col.gg"]])) cat("\n", "---ggplot object---\n")
+  if (!purrr::is_empty(x[["col.gg"]])) cat("\n", "---ggplot object--- \n")
   x[["col.gg"]] %>%
     purrr::walk(draw_color_mosaic, blank.len = blank.len)
 }

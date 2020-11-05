@@ -11,7 +11,8 @@
 
 When you select a color literal and a ggplot2 object, the colors used there will be output in the console.
 
-![Show the colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/seecolor_ribbons.gif)
+
+![Show the colors as ribbons!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/3.gif)
 
 ## Installation
 ```r
@@ -21,17 +22,24 @@ devtools::install_github("songshangchen6/seecolor")
 
 ## Usage
 
+![Show the literal colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/1.gif)
 ```r
-# show the colors as ribbons
-seecolor::show_color()
+# Highlight objects by cursor to show the contained colors
+seecolor::pick_color()
+```
 
-# show the colors as single continous ribbon
-seecolor::show_color(type = "oneribbon")
+![Show the palette colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/2.gif)
 
-# show the colors used by a ggplot2 object (Testing)
-seecolor::show_color()
-seecolor::show_color(type = "oneribbon")
+```r
+# Change output styles, "ribbon" or "mosaic"
+seecolor::pick_color(type = "r")
 
-ggplot(diamonds, aes(carat, price)) + geom_bin2d()
- 
+# Change the length of the color blocks
+seecolor::pick_color(blank.len = 1)
+
+# Print colors contained in literal, palette and ggplot objects
+seecolor::print_color(colors(), type = "m", blank.len = 1)
+
+# Open the pre-define test file
+seecolor::open_sample()
 ```
