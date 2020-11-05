@@ -13,7 +13,18 @@ draw_color_mosaic <- function(bg.color,
 }
 
 draw_colors_mosaic <- function(colors){
-  purrr::walk(colors, ~ purrr::walk(.x, draw_color_mosaic))
+  # purrr::walk(colors, ~ purrr::walk(.x, draw_color_mosaic))
+
+  colors[["col.lit"]] %>%
+    purrr::walk(draw_color_mosaic)
+
+  if (!purrr::is_empty(colors[["col.pal"]])) cat("\n------", stringr::str_trim(colors[["active.pal"]]), "------\n")
+  colors[["col.pal"]] %>%
+    purrr::walk(draw_color_mosaic)
+
+  if (!purrr::is_empty(colors[["col.gg"]])) cat("\n---ggplot object---\n")
+  colors[["col.gg"]] %>%
+    purrr::walk(draw_color_mosaic)
 }
 
 
@@ -37,7 +48,17 @@ draw_color_ribbon <- function(bg.color,
 }
 
 draw_colors_ribbon <- function(colors){
-  purrr::walk(colors, ~ purrr::walk(.x, draw_color_ribbon))
+  ## purrr::walk(colors, ~ purrr::walk(.x, draw_color_ribbon))
+  colors[["col.lit"]] %>%
+    purrr::walk(draw_color_ribbon)
+
+  if (!purrr::is_empty(colors[["col.pal"]])) cat("------palette------\n")
+  colors[["col.pal"]] %>%
+    purrr::walk(draw_color_ribbon)
+
+  if (!purrr::is_empty(colors[["col.gg"]])) cat("---ggplot object---\n")
+  colors[["col.gg"]] %>%
+    purrr::walk(draw_color_ribbon)
 }
 
 contrast_color <- function(x) {

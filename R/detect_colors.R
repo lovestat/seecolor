@@ -2,6 +2,9 @@
 
 #----- Detect colors
 detect_colors <- function(active.text) {
+
+  active.pal <- NULL
+
   #----- Capture the colors contained in palette like colors(),
   #----- palette(), rainbow(50)
   detected.colors.palette <- NULL
@@ -14,6 +17,7 @@ detect_colors <- function(active.text) {
       return(FALSE)
       }
     )) {
+    active.pal <- active.text
     detected.colors.palette <- extract_colors_literal(eval.text)
   }
 
@@ -33,7 +37,8 @@ detect_colors <- function(active.text) {
   #----- Values
   list(col.pal = detected.colors.palette,
        col.gg = detected.colors.ggplot,
-       col.lit = hex.and.bti.colors)
+       col.lit = hex.and.bti.colors,
+       active.pal = active.pal)
 }
 
 
