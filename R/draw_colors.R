@@ -51,7 +51,7 @@ draw_colors_ribbon <- function(x){
   x[["col.lit"]] %>%
     purrr::walk(draw_color_ribbon)
 
-  if (!purrr::is_empty(x[["col.pal"]])) cat("------palette------\n")
+  if (!purrr::is_empty(x[["col.pal"]])) cat("\n", "------", stringr::str_trim(x[["active.pal"]]), "------\n")
   x[["col.pal"]] %>%
     purrr::walk(draw_color_ribbon)
 
@@ -59,6 +59,8 @@ draw_colors_ribbon <- function(x){
   x[["col.gg"]] %>%
     purrr::walk(draw_color_ribbon)
 }
+
+
 
 contrast_color <- function(x) {
   args <- dplyr::if_else(grDevices::col2rgb(x) < 128, 255, 0) %>%
