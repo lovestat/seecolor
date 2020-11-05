@@ -1,5 +1,10 @@
 # seecolor <img src="man/figures/logo.png" align="right" width="120">
 
+[![Build Status](https://travis-ci.com/songshangchen6/seecolor.svg?branch=master)
+
+[![R build status](https://github.com/songshangchen6/seecolor/workflows/R-CMD-check/badge.svg)](https://github.com/songshangchen6/seecolor/actions)
+
+
 ## Overview 
 
 When you select a color literal and a ggplot2 object, the colors used there will be output in the console.
