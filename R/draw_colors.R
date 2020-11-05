@@ -17,7 +17,7 @@ draw_colors_mosaic <- function(x, blank.len){
   x[["col.lit"]] %>%
     purrr::walk(draw_color_mosaic, blank.len = blank.len)
 
-  if (!purrr::is_empty(x[["col.pal"]])) cat("------", stringr::str_trim(x[["active.pal"]]), "------\n")
+  if (!purrr::is_empty(x[["col.pal"]])) cat("\n------", stringr::str_trim(x[["active.pal"]]), "------\n")
   x[["col.pal"]] %>%
     purrr::walk(draw_color_mosaic, blank.len = blank.len)
 

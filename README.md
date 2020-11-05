@@ -1,8 +1,9 @@
 # seecolor <img src="man/figures/logo.png" align="right" width="120">
 
 <!-- badges: start -->
-[![Build Status](https://travis-ci.com/songshangchen6/seecolor.svg?branch=master)
+![Build Status](https://travis-ci.com/songshangchen6/seecolor.svg?branch=master)
 [![R build status](https://github.com/songshangchen6/seecolor/workflows/R-CMD-check/badge.svg)](https://github.com/songshangchen6/seecolor/actions)
+![lifecycle](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 
