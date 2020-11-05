@@ -1,21 +1,8 @@
 
-
-draw_color_ribbon <- function(bg.color, text.color = "ivory", blank.len = 20 - nchar(bg.color), next.line = TRUE){
-  tc <- make_style(text.color)
-  bgc <- make_style(bg.color, bg = T)
-  dc <- combine_styles(tc, bgc)
-  cat(
-    dc(paste0(bg.color, paste0(rep(" ", blank.len), collapse = "")))
-  )
-  if (next.line) cat("\n")
-}
-
-draw_colors_ribbon <- function(colors){
-  purrr::walk(colors, draw_color_ribbon)
-}
-
-
-draw_color_mosaic <- function(bg.color, text.color = "ivory", blank.len = 1, next.line = FALSE){
+draw_color_mosaic <- function(bg.color,
+                              text.color = "yellow",
+                              blank.len = 1,
+                              next.line = FALSE){
   tc <- make_style(text.color)
   bgc <- make_style(bg.color, bg = T)
   dc <- combine_styles(tc, bgc)
@@ -25,8 +12,40 @@ draw_color_mosaic <- function(bg.color, text.color = "ivory", blank.len = 1, nex
   if (next.line) cat("\n")
 }
 
-
 draw_colors_mosaic <- function(colors){
-  purrr::walk(colors, draw_color_mosaic)
+  purrr::walk(colors, ~ purrr::walk(.x, draw_color_mosaic))
 }
+
+
+
+
+
+draw_color_ribbon <- function(bg.color,
+                              text.color = "yellow",
+                              blank.len = 20 - nchar(bg.color),
+                              next.line = TRUE) {
+  #----- text color brush
+  tc <- make_style(contrast_color(bg.color))
+  #----- background color brush
+  bgc <- make_style(bg.color, bg = T)
+  #----- draw color brush
+  dc <- combine_styles(tc, bgc)
+  cat(
+    dc(paste0(bg.color, paste0(rep(" ", blank.len), collapse = "")))
+  )
+  if (next.line) cat("\n")
+}
+
+draw_colors_ribbon <- function(colors){
+  purrr::walk(colors, ~ purrr::walk(.x, draw_color_ribbon))
+}
+
+contrast_color <- function(x) {
+  dplyr::if_else(col2rgb(x) < 128, 255, 0) %>%
+    as.list() %>%
+    append(255) %>%
+    purrr::set_names(c("red", "green", "blue", "maxColorValue")) %>%
+    do.call(grDevices::rgb, .)
+}
+
 
