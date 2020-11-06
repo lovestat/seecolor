@@ -37,7 +37,9 @@ pick_color <- function(type = "mosaic", blank.len = 3) {
     active.context <- rstudioapi::getActiveDocumentContext()
     active.text <- active.context$selection[[1]][["text"]]
 
-    if(active.text != previous.text) {
+    if(active.text != previous.text &&
+       !stringr::str_detect(active.text,
+                           "pick_color|devtools|seecolor")) {
 
       previous.text <- active.text
 
