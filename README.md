@@ -1,8 +1,8 @@
 # seecolor <img src="man/figures/logo.png" align="right" width="120">
 
 <!-- badges: start -->
-![Build Status](https://travis-ci.com/songshangchen6/seecolor.svg?branch=master)
-[![R build status](https://github.com/songshangchen6/seecolor/workflows/R-CMD-check/badge.svg)](https://github.com/songshangchen6/seecolor/actions)
+![Build Status](https://travis-ci.com/lovestat/seecolor.svg?branch=master)
+[![R build status](https://github.com/lovestat/seecolor/workflows/R-CMD-check/badge.svg)](https://github.com/lovestat/seecolor/actions)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
@@ -11,7 +11,7 @@
 
 When you select color literals, a palette, or a ggplot2 object, the colors used there will be output in the console.
 
-![Show the palette colors!](https://github.com/songshangchen6/seecolor/blob/master/man/figures/2.gif)
+![Show the palette colors!](https://github.com/lovestat/seecolor/blob/master/man/figures/2.gif)
 
 ## Installation
 ```r
