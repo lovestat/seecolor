@@ -15,6 +15,7 @@ When you select color literals, a palette, or a ggplot2 object, the colors used 
 
 ## Installation
 ```r
+# install from CRAN
 install.packages("seecolor")
 
 # install from GitHub:
