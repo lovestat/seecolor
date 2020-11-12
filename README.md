@@ -43,5 +43,5 @@ print_color(colors(), type = "m", blank.len = 1)
 open_sample()
 ```
 
-![Show the palette colors!](https://github.com/lovestat/seecolor/blob/master/man/figures/2.gif)
+![Show the palette colors!](https://github.com/lovestat/seecolor/raw/master/man/figures/seecolor_ribbons.gif)
 
