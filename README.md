@@ -39,7 +39,7 @@ pick_color(blank.len = 1)
 # Print colors contained in literal, palette and ggplot objects
 print_color(colors(), type = "m", blank.len = 1)
 
-# Open the pre-define test file
+# Open the pre-defined test file
 open_sample()
 ```
 

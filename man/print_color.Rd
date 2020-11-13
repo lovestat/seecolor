@@ -19,8 +19,8 @@ Print out the colors used by a literal vector,
 a palette, or a ggplot object
 }
 \examples{
-\donttest{
+
 print_color(colors(), type = "mosaic", blank.len = 3)
-print_color(palette(), type = "ribbon", blank.len = 3)
-}
+print_color(palette(), type = "ribbon")
+
 }

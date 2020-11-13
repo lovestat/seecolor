@@ -8,5 +8,5 @@ z_pick_color_addin_mosaic()
 }
 \description{
 Run \code{pick_color(type = 'mosaic')} as addin, you may not run
-this directly by code, since it has not arguments
+this directly by code, since it comes without arguments
 }

@@ -9,10 +9,10 @@
 ##' @param blank.len A integer. The length of color mosaic. The default value is 3.
 ##'
 ##' @examples
-##' \donttest{
+##'
 ##' print_color(colors(), type = "mosaic", blank.len = 3)
-##' print_color(palette(), type = "ribbon", blank.len = 3)
-##' }
+##' print_color(palette(), type = "ribbon")
+##'
 ##' @importFrom crayon make_style combine_styles
 ##' @export
 ##' @md
