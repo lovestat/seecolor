@@ -1,6 +1,6 @@
 Package: seecolor
 Title: View Colors Used in R Objects in the Console
-Version: 0.0.1
+Version: 0.1.0
 Authors@R: 
     person(given = "Shangchen",
            family = "Song",
