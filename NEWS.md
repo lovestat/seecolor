@@ -1,4 +1,4 @@
-## seecolor 0.1.0
+# seecolor 0.1.0
 
 * Support RStudio Addins
 * Fix bugs for repeatedly draw ggplots
