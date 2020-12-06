@@ -1,0 +1,512 @@
+ifelse(as.vector(grDevices::col2rgb("#FF00FF")) < 128, 0, 255) %>%
+make.rgb()
+ifelse(as.vector(grDevices::col2rgb("#FF00FF")) < 128, 0, 255) %>%
+?make.rgb()
+?make.rgb()
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255)
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list()
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("make.rgb", .)
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("make.rgb", .) %>%
+seecolor::print_color()
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("make.rgb", .) %>%
+rgb()
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("make.rgb", .)
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("make.rgb", .) %>% print()
+aq <- if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("make.rgb", .)
+aq
+View(aq)
+aq$name
+aq <- if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+do.call("rgb", .)
+?rbg
+?grDevices::rgb
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list()
+aq <- if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+list(255) %>%
+do.call("rgb", .)
+if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+list()
+aq <- if_else(grDevices::col2rgb("#FF00FF") < 128, 0, 255) %>%
+as.list() %>%
+append(255)
+aq
+col2rgb("yellow")
+col2rgb("yellow") %>% rgb()
+if_else(col2rgb("yellow") < 128, 255, 0)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0)
+crayon::make_style(dplyr::if_else(col2rgb("yellow") < 128, 255, 0))
+grDevices::rgb(dplyr::if_else(col2rgb("yellow") < 128, 255, 0),
+maxColorValue = 255)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list()
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+set_names(red, green, blue)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+set_names(c("red", "green", "blue"))
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+set_names(c("red", "green", "blue")) %>%
+do.call("rbg", .)
+getFunction("grDevices::rgb")
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+set_names(c("red", "green", "blue")) %>%
+do.call(grDevices::rgb, .)
+set_names(c("red", "green", "blue", "maxColorValue")) %>%
+do.call(grDevices::rgb, .)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+append(255)
+set_names(c("red", "green", "blue", "maxColorValue"))
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+append(255) %>%
+set_names(c("red", "green", "blue", "maxColorValue")) %>%
+do.call(grDevices::rgb, .)
+dplyr::if_else(col2rgb("yellow") < 128, 255, 0) %>%
+as.list() %>%
+append(255) %>%
+set_names(c("red", "green", "blue", "maxColorValue")) %>%
+do.call(grDevices::rgb, .) %>%
+seecolor::print_color()
+seecolor::print_color("#000080")
+dplyr::if_else(col2rgb("#000080") < 128, 255, 0) %>%
+as.list() %>%
+append(255) %>%
+set_names(c("red", "green", "blue", "maxColorValue")) %>%
+do.call(grDevices::rgb, .) %>%
+seecolor::print_color()
+contrast_color <- function(x) {
+dplyr::if_else(col2rgb(x) < 128, 255, 0) %>%
+as.list() %>%
+append(255) %>%
+set_names(c("red", "green", "blue", "maxColorValue")) %>%
+do.call(grDevices::rgb, .)
+}
+#0000FF
+contrast_color("#0000FF")
+devtools::install(upgrade = F)
+seecolor::pick_color('r')
+seecolor::pick_color('r')
+NULL %>% map(print)
+devtools::install(upgrade = F)
+seecolor::pick_color('r')
+devtools::install(upgrade = F)
+seecolor::pick_color('r')
+devtools::install(upgrade = F)
+seecolor::pick_color('r')
+devtools::install(upgrade = F)
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color('r')
+seecolor::pick_color()
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color(blank.len = 3)
+seecolor::pick_color(blank.len = 3)
+seecolor::pick_color(blank.len = 3)
+seecolor::pick_color(blank.len = 3)
+devtools::install(upgrade = F)
+seecolor::pick_color()
+seecolor::pick_color(blank.len = 3)
+devtools::install(upgrade = F)
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+seecolor::print_color(colors)
+seecolor::print_color(palette())
+.Traceback
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+seecolor::pick_color()
+seecolor::pick_color()
+seecolor::pick_color()
+traceback()
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+traceback()
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+seecolor::pick_color()
+traceback()
+seecolor::print_color(colors())
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+traceback()
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+seecolor::pick_color()
+a <- function(x){
+c(x, quote(x))
+}
+a <- function(x){
+list(x, quote(x))
+}
+a(1)
+a(a)
+match.call()
+a <- function(x){
+match.call()
+}
+a()
+a(x)
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+seecolor::print_color(colors())
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+?match.call()
+a <- function(xss){
+match.call()[["formals"]]
+}
+a()
+a(1)
+?match.arg
+match.arg(c("gauss", "rect", "ep"),
+c("gaussian", "epanechnikov", "rectangular", "triangular"),
+several.ok = TRUE)
+center <- function(x, type = c("mean", "median", "trimmed")) {
+type <- match.arg(type)
+switch(type,
+mean = mean(x),
+median = median(x),
+trimmed = mean(x, trim = .1))
+}
+x <- rcauchy(10)
+center(x, "t")       # Works
+center(x, "med")     # Works
+try(center(x, "m"))
+a <- function(xss){
+match.arg(xss)
+}
+a(1)
+a(xss = 1)
+center <- function(x, type = c("mean", "median", "trimmed")) {
+type <- match.arg(type)
+type
+}
+x <- rcauchy(10)
+center(x, "t")       # Works
+a <- function(b){
+match.arg(b)
+}
+a(xss = 1)
+a()
+a <- function(type){
+type <- match.arg(type)
+type
+}
+a(type = "1")
+a <- function(type = "1"){
+type <- match.arg(type)
+type
+}
+a(type = "1")
+a(type = "6")
+?match.fun
+a <- function(x){
+as.character(quote(x))
+}
+a(x = 3)
+a <- function(x){
+match.call()
+}
+a(x = 3)
+a <- function(x){
+match.call() %>% names()
+}
+a(x = 3)
+library(tidyverse)
+a <- function(x){
+match.call() %>% names()
+}
+a(x = 3)
+a <- function(x){
+match.call()[["x"]]
+}
+a(x = 3)
+a(x = dafd)
+devtools::install(upgrade = F)
+seecolor::print_color(colors())
+seecolor::print_color(palette())
+seecolor::pick_color()
+seecolor::print_color(palette())
+devtools::install(upgrade = F)
+seecolor::print_color(palette())
+devtools::install(upgrade = F)
+seecolor::print_color(palette())
+seecolor::print_color(colors())
+print(c(#800080, #0000FF))
+)
+seecolor::print_color(c("#800080", "#0000FF"))
+p <- ggplot(midwest, aes(x=area, y=poptotal)) +
+geom_point(aes(col=state, size=popdensity)) +
+geom_smooth(method="loess", se=F) +
+xlim(c(0, 0.1)) +
+ylim(c(0, 500000)) +
+labs(subtitle="Area Vs Population",
+y="Population",
+x="Area",
+title="Scatterplot",
+caption = "Source: midwest")
+seecolor::print_color(p)
+devtools::install(upgrade = F)
+seecolor::print_color(palette())
+devtools::install(upgrade = F)
+seecolor::print_color(palette())
+seecolor::print_color(colors())
+seecolor::print_color(colors())
+seecolor::print_color(palette())
+devtools::check()
+devtools::check()
+devtools::check()
+devtools::check()
+seecolor::open_sample()
+devtools::document()
+devtools::install(upgrade = F)
+?seecolor::open_sample()
+?seecolor::pick_color()
+devtools::install(upgrade = F)
+?seecolor::pick_color()
+?seecolor::pick_color()
+devtools::document()
+devtools::install(upgrade = F)
+?seecolor::pick_color()
+devtools::install(upgrade = F)
+?seecolor::pick_color()
+?seecolor::pick_color()
+devtools::document()
+devtools::install(upgrade = F)
+?seecolor::pick_color()
+?seecolor::pick_color()
+library(seecolor)
+example("pick_color")
+devtools::check()
+devtools::build_manual()
+usethis::use_travis()
+usethis::use_github_actions_badge()
+usethis::use_github_action()
+usethis::use_github_actions()
+seecolor::pick_color()
+seecolor::open_sample()
+seecolor::pick_color()
+cat("\n------", stringr::str_trim(x[["active.pal"]]), "------\n")
+devtools::install(upgrade = F)
+seecolor::pick_color()
+seecolor::pick_color()
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+seecolor::pick_color()
+x <- "123"
+cat("\n", "---ggplot object---\n")
+cat("\n", "---ggplot object--- \n")
+cat("\n", "------", stringr::str_trim(x[["active.pal"]]), "------\n")
+cat("\n", "------", "------\n")
+cat("\n", "------", "------\n", "---")
+devtools::check()
+devtools::release_checks()
+devtools::release()
+devtools::spell_check()
+devtools::spell_check()
+devtools::release()
+devtools::check_rhub()
+devtools::check_rhub()
+usethis::use_cran_comments()
+devtools::release()
+devtools::release()
+?seecolor::print_color
+devtools::install(upgrade = F)
+seecolor::open_sample()
+seecolor::pick_color('r')
+help(seecolor::open_sample)
+help(sum)
+help(ggplot)
+library(seecolor)
+help("pick_color")
+help(pick_color)
+reprex:::reprex_addin()
+devtools::install(upgrade = F)
+library(seecolor)
+remove.packages("seecolor", lib="~/R/win-library/4.0")
+devtools::install(upgrade = F)
+devtools::install(upgrade = F)
+devtools::install_github("lovestat/seecolor")
+seecolor:::pick_color()
+seecolor:::pick_color()
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::install(upgrade = F)
+devtools::document()
+devtools::document()
+devtools::document()
+addinexamples::insertInAddin()
+devtools::install_github("lovestat/seecolor", upgrade = F)
+remove.packages("seecolor", lib="~/R/win-library/4.0")
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::install_github("lovestat/seecolor", upgrade = F)
+seecolor::open_sample()
+seecolor:::pick_color_addin_ribbon()
+seecolor:::pick_color_addin_ribbon()
+bookdown:::serve_book()
+addinexamples:::findAndReplaceAddin()
+devtools::document()
+devtools::document()
+devtools::install(upgrade = F)
+devtools::check()
+devtools::install_github("lovestat/seecolor", upgrade = F)
+remove.packages("seecolor", lib="~/R/win-library/4.0")
+remove.packages("seecolor", lib="~/R/win-library/4.0")
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::document()
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::document()
+devtools::install_github("lovestat/seecolor", upgrade = F)
+devtools::install_github("lovestat/seecolor", upgrade = F)
+seecolor:::z_pick_color_addin_mosaic()
+seecolor::open_sample()
+seecolor:::z_pick_color_addin_mosaic()
+seecolor:::z_pick_color_addin_mosaic()
+seecolor::open_sample()
+seecolor::pick_color()
+seecolor::pick_color()
+class(seecolor::pick_color())
+stringr::str_detect("seecolor::pick_color())",
+"pick_")
+stringr::str_detect("seecolor::pick_color())",
+"pick_color")
+?stringr::str_detect("seecolor::pick_color())",
+"pick_color")
+seecolor::pick_color()
+devtools::install(upgrade = F)
+seecolor::pick_color()
+active.text
+active.text <- "seecolor::pick_color()"
+!stringr::str_detect(active.text,
+"pick_color | devtools")
+devtools::install(upgrade = F)
+seecolor::pick_color()
+seecolor::pick_color()
+seecolor::open_sample()
+seecolor::pick_color()
+1 && 2
+1 & 2
+?&&
+?`&&`
+str_detect(active.text,
+"pick_color | devtools")
+stringr::str_detect(active.text,
+"pick_color | devtools")
+active.text <- "seecolor::pick_color()"
+!stringr::str_detect(active.text,
+"pick_color | devtools")
+!stringr::str_detect(active.text,
+"pick_color|devtools")
+devtools::install(upgrade = F)
+seecolor::pick_color()
+devtools::install(upgrade = F)
+?predict
+seecolor::pick_color()
+usethis::use_github_release()
+install.packages("seecolor")
+seecolor::open_sample()
+seecolor::pick_color('r')
+usethis::use_coverage()
+install.packages("pkgdown")
+# Run once to configure package to use pkgdown
+usethis::use_pkgdown()
+# Run to build the website
+pkgdown::build_site()
+# Run to build the website
+pkgdown::build_site()
+usethis::use_github_action("pkgdown")
+# Run to build the website
+pkgdown::build_site()
+usethis::use_github_action("pkgdown")
+# Run to build the website
+pkgdown::build_site()
+# Run to build the website
+pkgdown::build_site()
+# Run to build the website
+pkgdown::build_site()
+devtools::document()
+devtools::document()
+# Run to build the website
+pkgdown::build_site()
+devtools::document()
+?file.mtime()
+?tools::md5sum()
+?saveRDS
+usethis::use_vignette()
+usethis::use_vignette("Intro")
+library(seecolor)
+print_color(palette())
+print_color(c("red", "navy", "#521354"))
+library(seecolor)
+library(ggplot2)
+attach(iris)
+iris
+ggplot(iris) +
+geom_point(aes(Sepal.Length, Petal.Length, group = Species))
+ggplot(iris) +
+geom_point(aes(Sepal.Length, Petal.Length, color = Species))
+p <- ggplot(iris) +
+geom_point(aes(Sepal.Length, Petal.Length, color = Species))
+print_color(p)
+names(diamonds)
+dplyr::glimpse(diamonds)
+print_color(colors(), blank.len = 1)
+print_color(p)
+p <- ggplot(iris) +
+geom_point(aes(Sepal.Length, Petal.Length, color = Sepal.Width))
+print_color(p)
+print_color(c("red", "navy", "#521354"))
+print_color(palette())
+print_color(colors(), blank.len = 1)
+p1 <- ggplot(iris) +
+geom_point(aes(Sepal.Length, Petal.Length, color = Species))
+print_color(p1)
+p2 <- ggplot(iris) +
+geom_point(aes(Sepal.Length, Petal.Length, color = Sepal.Width))
+print_color(p2)
+devtools::document()
+# Run to build the website
+pkgdown::build_site()
