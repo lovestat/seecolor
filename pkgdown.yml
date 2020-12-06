@@ -2,6 +2,6 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  Intro: Intro.html
-last_built: 2020-11-20T18:35Z
+  Introduction to seecolor: Introduction to seecolor.html
+last_built: 2020-12-06T03:38Z
 
