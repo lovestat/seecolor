@@ -50,7 +50,7 @@ print_color(c("red", "navy", "pink", "#E58700", "limegreen"))
 print_color(c("red", "navy", "pink", "#E58700", "limegreen"), 
             type = "r")
 
-print_color(palette(rainbow(6)))
+print_color(palette(rainbow(6)), blank.len = 1)
 print_color(palette(rainbow(6)), type = 'r')
 
 p1 <- ggplot(mpg) +
