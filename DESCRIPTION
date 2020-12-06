@@ -14,7 +14,8 @@ Imports:
     stringr,
     rstudioapi,
     magrittr,
-    ggplot2
+    ggplot2,
+    fansi
 License: MIT + file LICENSE
 URL: https://github.com/lovestat/seecolor
 BugReports: https://github.com/lovestat/seecolor/issues
@@ -24,6 +25,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
     covr,
-    knitr,
-    rmarkdown
+    knitr
 VignetteBuilder: knitr
