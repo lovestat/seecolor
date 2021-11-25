@@ -11,7 +11,7 @@
 
 ## Overview 
 
-When you select color literals, a palette, or a ggplot2 object, the colors used there will be output in the console.
+When you select color literals, a palette, or a ggplot2 object, the colors used there will be output in the console. 
 
 
 ## Installation
