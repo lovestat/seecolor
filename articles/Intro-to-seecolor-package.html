@@ -26,6 +26,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -38,23 +40,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">seecolor</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -71,7 +67,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/lovestat/seecolor/">
+  <a href="https://github.com/lovestat/seecolor/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -92,7 +88,7 @@
       <h1 data-toc-skip>Intro-to-seecolor-package</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/lovestat/seecolor/blob/master/vignettes/Intro-to-seecolor-package.Rmd"><code>vignettes/Intro-to-seecolor-package.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/lovestat/seecolor/blob/HEAD/vignettes/Intro-to-seecolor-package.Rmd" class="external-link"><code>vignettes/Intro-to-seecolor-package.Rmd</code></a></small>
       <div class="hidden name"><code>Intro-to-seecolor-package.Rmd</code></div>
 
     </div>
@@ -102,99 +98,93 @@
 <style type="text/css" scoped>
 PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
 </style>
-<div id="use-the-cursor-to-select-object-to-print-in-the-console-" class="section level2">
-<h2 class="hasAnchor">
-<a href="#use-the-cursor-to-select-object-to-print-in-the-console-" class="anchor"></a>1. Use the cursor to select object to print in the console.</h2>
+<div class="section level2">
+<h2 id="use-the-cursor-to-select-object-to-print-in-the-console-">1. Use the cursor to select object to print in the console.<a class="anchor" aria-label="anchor" href="#use-the-cursor-to-select-object-to-print-in-the-console-"></a>
+</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Highlight objects by cursor to show the contained colors</span>
-<span class="fu"><a href="../reference/pick_color.html">pick_color</a></span><span class="op">(</span><span class="op">)</span>
-
-<span class="co"># Change output styles, "ribbon" or "mosaic"</span>
-<span class="fu"><a href="../reference/pick_color.html">pick_color</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"r"</span><span class="op">)</span>
-
-<span class="co"># Change the length of the color blocks</span>
-<span class="fu"><a href="../reference/pick_color.html">pick_color</a></span><span class="op">(</span>blank.len <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Highlight objects by cursor to show the contained colors</span></span>
+<span><span class="fu"><a href="../reference/pick_color.html">pick_color</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Change output styles, "ribbon" or "mosaic"</span></span>
+<span><span class="fu"><a href="../reference/pick_color.html">pick_color</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"r"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Change the length of the color blocks</span></span>
+<span><span class="fu"><a href="../reference/pick_color.html">pick_color</a></span><span class="op">(</span>blank.len <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
 <div class="figure">
 <img src="https://raw.githubusercontent.com/lovestat/seecolor/master/man/figures/2.gif" alt=""><p class="caption">Pick colors</p>
 </div>
 </div>
-<div id="use-print_color-to-print-color-literals-palettes-and-ggplot2-objects-" class="section level2">
-<h2 class="hasAnchor">
-<a href="#use-print_color-to-print-color-literals-palettes-and-ggplot2-objects-" class="anchor"></a>2. Use <code>print_color</code> to print color literals, palettes and ggplot2 objects.</h2>
-<div id="note-the-colors-may-appear-not-distingushable-in-the-html-version-but-they-always-work-fine-in-console-" class="section level3">
-<h3 class="hasAnchor">
-<a href="#note-the-colors-may-appear-not-distingushable-in-the-html-version-but-they-always-work-fine-in-console-" class="anchor"></a>Note: the colors may appear not distingushable in the html version, but they always work fine in console.</h3>
+<div class="section level2">
+<h2 id="use-print_color-to-print-color-literals-palettes-and-ggplot2-objects-">2. Use <code>print_color</code> to print color literals, palettes and ggplot2 objects.<a class="anchor" aria-label="anchor" href="#use-print_color-to-print-color-literals-palettes-and-ggplot2-objects-"></a>
+</h2>
+<div class="section level3">
+<h3 id="note-the-colors-may-appear-not-distingushable-in-the-html-version-but-they-always-work-fine-in-console-">Note: the colors may appear not distingushable in the html version, but they always work fine in console.<a class="anchor" aria-label="anchor" href="#note-the-colors-may-appear-not-distingushable-in-the-html-version-but-they-always-work-fine-in-console-"></a>
+</h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"red"</span>, <span class="st">"navy"</span>, <span class="st">"pink"</span>, <span class="st">"#E58700"</span>, <span class="st">"limegreen"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre class="fansi fansi-output"><code>#&gt; 
-#&gt;  ------ c red navy pink #E58700 limegreen ------
-#&gt; <span style="color: #BBBB00; background-color: #BB0000;">   </span><span style="color: #BBBB00; background-color: #0000BB;">   </span><span style="color: #BBBB00; background-color: #BBBBBB;">   </span><span style="color: #BBBB00; background-color: #BBBB00;">   </span><span style="color: #BBBB00; background-color: #00BB00;">   </span>
-</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"red"</span>, <span class="st">"navy"</span>, <span class="st">"pink"</span>, <span class="st">"#E58700"</span>, <span class="st">"limegreen"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre class="fansi fansi-output"><code><span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  ------ c red navy pink #E58700 limegreen ------</span></span>
+<span><span class="co">#&gt;                </span></span></code></pre>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"red"</span>, <span class="st">"navy"</span>, <span class="st">"pink"</span>, <span class="st">"#E58700"</span>, <span class="st">"limegreen"</span><span class="op">)</span>, 
-            type <span class="op">=</span> <span class="st">"r"</span><span class="op">)</span></code></pre></div>
-<pre class="fansi fansi-output"><code>#&gt; 
-#&gt;  ------ c red navy pink #E58700 limegreen ------
-#&gt; <span style="color: #00BBBB; background-color: #BB0000;">red                 </span>
-#&gt; <span style="color: #BBBB00; background-color: #0000BB;">navy                </span>
-#&gt; <span style="color: #000000; background-color: #BBBBBB;">pink                </span>
-#&gt; <span style="color: #0000BB; background-color: #BBBB00;">#E58700             </span>
-#&gt; <span style="color: #BB00BB; background-color: #00BB00;">limegreen           </span>
-</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"red"</span>, <span class="st">"navy"</span>, <span class="st">"pink"</span>, <span class="st">"#E58700"</span>, <span class="st">"limegreen"</span><span class="op">)</span>, </span>
+<span>            type <span class="op">=</span> <span class="st">"r"</span><span class="op">)</span></span></code></pre></div>
+<pre class="fansi fansi-output"><code><span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  ------ c red navy pink #E58700 limegreen ------</span></span>
+<span><span class="co">#&gt; red                 </span></span>
+<span><span class="co">#&gt; navy                </span></span>
+<span><span class="co">#&gt; pink                </span></span>
+<span><span class="co">#&gt; #E58700             </span></span>
+<span><span class="co">#&gt; limegreen           </span></span></code></pre>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palette.html">palette</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palettes.html">rainbow</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span><span class="op">)</span>, blank.len <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
-<pre class="fansi fansi-output"><code>#&gt; 
-#&gt;  ------ palette rainbow(6) ------
-#&gt; <span style="color: #BBBB00; background-color: #000000;"> </span><span style="color: #BBBB00; background-color: #BB0000;"> </span><span style="color: #BBBB00; background-color: #00BB00;"> </span><span style="color: #BBBB00; background-color: #00BBBB;">  </span><span style="color: #BBBB00; background-color: #BB00BB;"> </span><span style="color: #BBBB00; background-color: #BBBB00;"> </span><span style="color: #BBBB00; background-color: #BBBBBB;"> </span>
-</code></pre>
+<code class="sourceCode R"><span></span>
+<span><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palette.html" class="external-link">palette</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palettes.html" class="external-link">rainbow</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span><span class="op">)</span>, blank.len <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+<pre class="fansi fansi-output"><code><span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  ------ palette rainbow(6) ------</span></span>
+<span><span class="co">#&gt;         </span></span></code></pre>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palette.html">palette</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palettes.html">rainbow</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'r'</span><span class="op">)</span></code></pre></div>
-<pre class="fansi fansi-output"><code>#&gt; 
-#&gt;  ------ palette rainbow(6) ------
-#&gt; <span style="color: #00BBBB; background-color: #BB0000;">red                 </span>
-#&gt; <span style="color: #0000BB; background-color: #BBBB00;">yellow              </span>
-#&gt; <span style="color: #BB00BB; background-color: #00BB00;">green               </span>
-#&gt; <span style="color: #BB0000; background-color: #00BBBB;">cyan                </span>
-#&gt; <span style="color: #BBBB00; background-color: #0000BB;">blue                </span>
-#&gt; <span style="color: #00BB00; background-color: #BB00BB;">magenta             </span>
-</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palette.html" class="external-link">palette</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/palettes.html" class="external-link">rainbow</a></span><span class="op">(</span><span class="fl">6</span><span class="op">)</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'r'</span><span class="op">)</span></span></code></pre></div>
+<pre class="fansi fansi-output"><code><span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  ------ palette rainbow(6) ------</span></span>
+<span><span class="co">#&gt; red                 </span></span>
+<span><span class="co">#&gt; yellow              </span></span>
+<span><span class="co">#&gt; green               </span></span>
+<span><span class="co">#&gt; cyan                </span></span>
+<span><span class="co">#&gt; blue                </span></span>
+<span><span class="co">#&gt; magenta             </span></span></code></pre>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_point</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span><span class="va">displ</span>, <span class="va">cyl</span>, color <span class="op">=</span> <span class="va">manufacturer</span><span class="op">)</span><span class="op">)</span>
-<span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="va">p1</span><span class="op">)</span></code></pre></div>
-<pre class="fansi fansi-output"><code>#&gt; 
-#&gt;  ---ggplot object--- 
-#&gt; <span style="color: #BBBB00; background-color: #BB0000;">   </span><span style="color: #BBBB00; background-color: #BBBB00;">         </span><span style="color: #BBBB00; background-color: #00BB00;">         </span><span style="color: #BBBB00; background-color: #00BBBB;">            </span><span style="color: #BBBB00; background-color: #BBBBBB;">   </span><span style="color: #BBBB00; background-color: #BB00BB;">         </span>
-</code></pre>
+<code class="sourceCode R"><span></span>
+<span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_point</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span><span class="va">displ</span>, <span class="va">cyl</span>, color <span class="op">=</span> <span class="va">manufacturer</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="va">p1</span><span class="op">)</span></span></code></pre></div>
+<pre class="fansi fansi-output"><code><span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  ---ggplot object--- </span></span>
+<span><span class="co">#&gt;                                              </span></span></code></pre>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="va">p1</span>, type <span class="op">=</span> <span class="st">'r'</span><span class="op">)</span></code></pre></div>
-<pre class="fansi fansi-output"><code>#&gt; ---ggplot object---
-#&gt; <span style="color: #00BBBB; background-color: #BB0000;">#F8766D             </span>
-#&gt; <span style="color: #0000BB; background-color: #BBBB00;">#E58700             </span>
-#&gt; <span style="color: #0000BB; background-color: #BBBB00;">#C99800             </span>
-#&gt; <span style="color: #0000BB; background-color: #BBBB00;">#A3A500             </span>
-#&gt; <span style="color: #BB00BB; background-color: #00BB00;">#6BB100             </span>
-#&gt; <span style="color: #BB00BB; background-color: #00BB00;">#00BA38             </span>
-#&gt; <span style="color: #BB00BB; background-color: #00BB00;">#00BF7D             </span>
-#&gt; <span style="color: #BB0000; background-color: #00BBBB;">#00C0AF             </span>
-#&gt; <span style="color: #BB0000; background-color: #00BBBB;">#00BCD8             </span>
-#&gt; <span style="color: #BB0000; background-color: #00BBBB;">#00B0F6             </span>
-#&gt; <span style="color: #BB0000; background-color: #00BBBB;">#619CFF             </span>
-#&gt; <span style="color: #000000; background-color: #BBBBBB;">#B983FF             </span>
-#&gt; <span style="color: #00BB00; background-color: #BB00BB;">#E76BF3             </span>
-#&gt; <span style="color: #00BB00; background-color: #BB00BB;">#FD61D1             </span>
-#&gt; <span style="color: #00BB00; background-color: #BB00BB;">#FF67A4             </span>
-</code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/print_color.html">print_color</a></span><span class="op">(</span><span class="va">p1</span>, type <span class="op">=</span> <span class="st">'r'</span><span class="op">)</span></span></code></pre></div>
+<pre class="fansi fansi-output"><code><span><span class="co">#&gt; ---ggplot object---</span></span>
+<span><span class="co">#&gt; #F8766D             </span></span>
+<span><span class="co">#&gt; #E58700             </span></span>
+<span><span class="co">#&gt; #C99800             </span></span>
+<span><span class="co">#&gt; #A3A500             </span></span>
+<span><span class="co">#&gt; #6BB100             </span></span>
+<span><span class="co">#&gt; #00BA38             </span></span>
+<span><span class="co">#&gt; #00BF7D             </span></span>
+<span><span class="co">#&gt; #00C0AF             </span></span>
+<span><span class="co">#&gt; #00BCD8             </span></span>
+<span><span class="co">#&gt; #00B0F6             </span></span>
+<span><span class="co">#&gt; #619CFF             </span></span>
+<span><span class="co">#&gt; #B983FF             </span></span>
+<span><span class="co">#&gt; #E76BF3             </span></span>
+<span><span class="co">#&gt; #FD61D1             </span></span>
+<span><span class="co">#&gt; #FF67A4             </span></span></code></pre>
 </div>
 </div>
-<div id="use-open_sample-to-open-a-sample-file-to-have-an-instant-try-" class="section level2">
-<h2 class="hasAnchor">
-<a href="#use-open_sample-to-open-a-sample-file-to-have-an-instant-try-" class="anchor"></a>3. Use <code>open_sample()</code> to open a sample file to have an instant try.</h2>
+<div class="section level2">
+<h2 id="use-open_sample-to-open-a-sample-file-to-have-an-instant-try-">3. Use <code>open_sample()</code> to open a sample file to have an instant try.<a class="anchor" aria-label="anchor" href="#use-open_sample-to-open-a-sample-file-to-have-an-instant-try-"></a>
+</h2>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Open the pre-defined test file</span>
-<span class="fu"><a href="../reference/open_sample.html">open_sample</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Open the pre-defined test file</span></span>
+<span><span class="fu"><a href="../reference/open_sample.html">open_sample</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
   </div>
 
@@ -209,11 +199,13 @@ PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
 
 
       <footer><div class="copyright">
-  <p>Developed by Shangchen Song.</p>
+  <p></p>
+<p>Developed by Shangchen Song.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
@@ -221,6 +213,8 @@ PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
 
   
 
+
+  
 
   </body>
 </html>
