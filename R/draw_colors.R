@@ -63,7 +63,7 @@ draw_colors_ribbon <- function(x){
 
 
 contrast_color <- function(x) {
-  args <- dplyr::if_else(grDevices::col2rgb(x) < 128, 255, 0) %>%
+  args <- ifelse(grDevices::col2rgb(x) < 128, 255, 0) %>%
     as.list() %>%
     append(255) %>%
     purrr::set_names(c("red", "green", "blue", "maxColorValue"))
