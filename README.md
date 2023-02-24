@@ -4,8 +4,6 @@
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/seecolor?color=green)](https://cran.r-project.org/package=seecolor)
 ![Build Status](https://travis-ci.com/lovestat/seecolor.svg?branch=master)
 [![R build status](https://github.com/lovestat/seecolor/workflows/R-CMD-check/badge.svg)](https://github.com/lovestat/seecolor/actions)
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Codecov test coverage](https://codecov.io/gh/lovestat/seecolor/branch/master/graph/badge.svg)](https://codecov.io/gh/lovestat/seecolor?branch=master)
 <!-- badges: end -->
 
 
